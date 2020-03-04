@@ -1,0 +1,18 @@
+<div>
+
+    <button *ngFor="let news of newsList" (click)="show(news)">{{news.name}}</button>
+
+</div>
+
+
+
+<div *ngIf="button">
+    <h3>{{name}}</h3>
+    <div>
+        {{description}}
+    </div>
+    <div class="end">
+        <p>{{date}}</p>
+        <p>{{author}}</p>
+    </div>
+</div>
